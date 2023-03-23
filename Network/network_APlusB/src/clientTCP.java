@@ -22,9 +22,9 @@ public class clientTCP {
                     // read length
 
                     int a = byteToInt(dataInputStream.readNBytes(4));
-                    //System.out.println(a);
+                    System.out.println(a);
                     int b = byteToInt(dataInputStream.readNBytes(4));
-                    //System.out.println(b);
+                    System.out.println(b);
 
                     byte[] types = intToLittleEndian(2); // PKT_RESULT
                     byte[] lens = intToLittleEndian(4);
