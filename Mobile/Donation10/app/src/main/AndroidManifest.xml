@@ -13,9 +13,34 @@
         android:theme="@style/Theme.Donation10"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".compose.ComposeQuadrantActivity"
+            android:exported="false"
+            android:label="@string/title_activity_compose_quadrant"
+            android:theme="@style/Theme.Donation10" />
+        <activity
+            android:name=".compose.TaskCompletedActivity"
+            android:exported="false"
+            android:label="@string/title_activity_task_completed"
+            android:theme="@style/Theme.Donation10" />
+        <activity
+            android:name=".compose.PostComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_post_compose"
+            android:theme="@style/Theme.Donation10" />
+        <activity
+            android:name=".compose.MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Donation10">
+
+        </activity>
+        <activity
+            android:name=".views.Donate"
+            android:exported="true"
+            android:label="Donation"
             android:theme="@style/Theme.Donation10">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
