@@ -1,0 +1,58 @@
+:root {
+  background-color: rgb(252, 250, 246);
+  font-family: arial, sans-serif, serif;
+}
+
+div .image-box img {
+  width: 100%;
+}
+
+div.page {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(34, 34, 34);
+}
+
+div.page h1 {
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+}
+
+div.page p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+div.page div .image-caption {
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+div {
+  display: block;
+}
+
+@media screen and (max-width: 359px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  :root {
+    font-size: calc(16px + 2 * ((100vw - 360px) / 408));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: calc(18px + 2 * ((100vw - 768px) / 598));
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  :root {
+    font-size: 20px;
+  }
+}
