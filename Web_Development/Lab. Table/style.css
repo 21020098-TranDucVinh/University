@@ -1,0 +1,54 @@
+#tbl {
+  border: solid 1px #000000;
+  border-collapse: collapse;
+}
+
+#tbl td,
+th {
+  border: solid 1px #000000;
+}
+
+.row:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+#tbl thead {
+  background-color: #B6FFFA;
+}
+
+#sortable th.sortcol span.arrow::after {
+  content: "\2195";
+}
+
+#tbl tr.selected {
+  background-color: yellow;
+}
+
+
+.nodisplay {
+  display: none;
+}
+
+div.group-op-container {
+  height: 30px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #BFB29E;
+}
+
+
+#tbl th.asc span.arrow::after {
+  content: "\2191";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+
+#tbl th.desc span.arrow::after {
+  content: "\2193";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Fetch API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>JSONPlaceholder API Example</h1>
+  <div class="box">
+    <h2>Get User by ID</h2>
+    <div class="search">
+      <label for="userId">User ID: </label>
+      <input type="text" id="userId" placeholder="Enter User ID">
+      <button id="getUser">Get User</button>
+    </div>
+    <div class="container" id="userDetails"></div>
+  </div>
+
+  <div class="box">
+    <h2>All Users</h2>
+    <button id="getAllUsers">Get All Users</button>
+    <div class="container" id="allUsers"></div>
+  </div>
+
+  <div class="box">
+    <h2>Create Post</h2>
+    <div class="post">
+      <label for="title">Title: </label>
+      <input type="text" id="title" placeholder="Enter Title">
+      <label for="body">Body: </label>
+      <input type="text" id="body" placeholder="Enter Body">
+      <button id="createPost">Create Post</button>
+    </div>
+    <div class="container" id="postDetails"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

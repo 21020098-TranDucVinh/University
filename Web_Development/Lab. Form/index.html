@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form id="form1" method="post" action="">
+    <div>
+      <label class="newline">Họ tên:</label>
+      <input type="text" name="name" id="name" class="required">
+      <span id="name_error" class="error"></span>
+      <br>
+    </div>
+    <div>
+      <label class="newline">Địa chỉ:</label>
+      <input type="text" name=" " id="address">
+      <br>
+    </div>
+    <div>
+      <label class="newline">Giới tính:</label>
+      <label class="radio-container">
+        <input type="radio" name="sex" id="male" checked="checked"> Name
+        <span class="checkmark"></span>
+        <span class="checkmark2"></span>
+      </label>
+      <label class="radio-container">
+        <input type="radio" name="sex" id="female"> Nữ
+        <span class="checkmark"></span>
+        <span class="checkmark2"></span>
+      </label>
+      <br>
+    </div>
+    <div>
+      <label class="newline">Ngày sinh:</label>
+      <input type="text" name="birthday" id="birthday" placeholder="nn/tt/nnnn" class="required">
+      <span id="birthday_error" class="error"></span>
+      <br>
+    </div>
+    <div>
+      <label class="newline">Email:</label>
+      <input type="text" name="email" id="email" class="required">
+      <span id="email_error" class="error"></span>
+      <br>
+    </div>
+
+    <div>
+
+      <label class="newline">Điện thoại:</label>
+      <input type="text" id="fixed" name="fixed" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+        onkeyup="javascript:DoKeyup(event, this, 'english');" />
+      <br />
+
+    </div>
+    <div>
+      <label class="newline">Khóa đăng ký:</label>
+
+      <label class="checkbox-container">
+        <input type="checkbox" id="english" name="english" onkeyup="javascript:DoKeyup(event, this, 'quantri');" />
+        Tiếng
+        Anh
+        <span class="checkmark"></span>
+        <span class="checkmark2"></span>
+      </label>
+
+      <label class="checkbox-container">
+        <input type="checkbox" id="quantri" name="quantri" onkeyup="javascript:DoKeyup(event, this, 'it');" /> Quản trị
+        <span class="checkmark"></span>
+        <span class="checkmark2"></span>
+      </label>
+
+      <label class="checkbox-container">
+        <input type="checkbox" id="it" name="it" onkeyup="javascript:DoKeyup(event, this, 'username');" /> CNTT
+        <span class="checkmark"></span>
+        <span class="checkmark2"></span>
+      </label>
+      <br />
+
+    </div>
+    <div>
+      <label class="newline">Tên sử dụng:</label>
+      <input type="text" id="username" name="username" class="required"
+        onkeyup="javascript:DoKeyup(event, this, 'pass');" />
+      <span id="username_error" class="error"></span>
+      <br />
+    </div>
+    <div>
+      <label class="newline">Mật khẩu:</label>
+      <input type="password" id="pass" name="pass" class="required"
+        onkeyup="javascript:DoKeyup(event, this, 'repass');" />
+      <span id="pass_error" class="error"></span>
+      <br />
+    </div>
+    <div>
+      <label class="newline">Gõ lại mật khẩu:</label>
+      <input type="password" id="repass" name="repass" class="required"
+        onkeyup="javascript:DoKeyup(event, this, 'ghichu');" />
+      <span id="repass_error" class="error"></span>
+      <br />
+    </div>
+    <div>
+      <label class="newline">Ghi chú:</label>
+      <textarea id="ghichu" name="ghichu"></textarea>
+      <br />
+    </div>
+    <div>
+      <label class="newline">&nbsp;</label>
+      <img class="preview nodisplay" src="" style="height:200px;" />
+      <br />
+    </div>
+    <div>
+      <label class="newline">Ảnh chân dung:</label>
+      <input type="file" name="FileUpload1" id="FileUpload1" accept=".png,.jpg" />
+      <br />
+    </div>
+    <div>
+      <label class="newline">&nbsp;</label>
+      <input type="button" onclick="javascript:Chapnhan();" value="Chấp nhận" />
+      <input type="button" onclick="javascript:Boqua();" value="Bỏ qua" />
+      <br />
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+
+  <body>
+
+  </body>
+
+</html>
