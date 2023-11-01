@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+
+  font-family: arial;
+  font-size: 12px;
+}
+
+li {
+  display: inline-block;
+  background-color: #cccccc;
+  border-left: solid 1px #dcdcdc;
+  border-right: solid 1px #dcdcdc;
+  border-top: solid 1px #dddddd;
+  border-bottom: solid 0px #dddddd;
+  cursor: pointer;
+
+  padding: 5px;
+}
+
+li:hover {
+  background-color: #fcfcfc;
+}
+
+li.selected {
+  background-color: #00ffff;
+}
